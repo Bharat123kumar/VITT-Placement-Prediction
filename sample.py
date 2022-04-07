@@ -12,7 +12,7 @@ app=Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/result',methods=["POST"])
+@app.route('/result')
 def result():
     if request.method == 'POST':
         mydict = request.form
