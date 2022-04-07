@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>data</title>
+</head>
+
+<body>
+
+    <div class="container my-4">
+
+        <!-- Intro -->
+
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center">Campus Recruitment Prediction</h4>
+            <div class="container text-center">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202002/main_image.jpeg?AEmB0MOrFThcKQ.8H2pvP3lMkJ5AxyxP&size=770:433">
+            </div>
+        </div>
+
+
+        <!-- Form -->
+        <h3 class='text-center'>Campus Placement Predictor</h3>
+        <div class="container my-4">
+            <form action="/result" method="POST">
+                 <!-- CRT-->
+                <div class="form-group">
+                    <label for="crt">Select CRT OR NON-CRT:</label>
+                    <select class="form-control" id="crt" name="crt" required>
+                            <option value="1">CRT</option>
+                            <option value="0">NON-CRT</option>
+                        </select>
+                </div>
+                <!-- Gender -->
+                <div class="form-group">
+                    <label for="gender">Select Gender:</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                </div>
+
+                <!-- Specialisation -->
+                <div class="form-group">
+                    <label for="branch">Select Specialisation:</label>
+                    <select class="form-control" id="branch" name="branch" required>
+                            <option value="5">CSE</option>
+                            <option value="4">ECE</option>
+                            <option value="3">EEE</option>
+                            <option value="2">ME</option>
+                            <option value="1">CIVIL</option>
+                        </select>
+                </div>
+
+                <!-- SSC_P -->
+
+                <div class="form-group">
+                    <label for="ssc">Enter the SSC CGPA:</label>
+                    <input type="number" class="form-control" id="ssc" name="ssc" min="0" max="10" step="0.1"  required>
+                </div>
+
+                 <!-- Inter or Diploma-->
+                 <div class="form-group">
+                    <label for="P">Select Inter or Diploma:</label>
+                    <select class="form-control" id="inter" name="inter" required>
+                            <option value="1">Inter</option>
+                            <option value="0">Diploma</option>
+                        </select>
+                </div>
+
+                <!-- HighSchool_P -->
+                <div class="form-group">
+                    <label for="hs">Enter the High School Percentage(Inter or Diploma):</label>
+                    <input type="number" class="form-control" id="hs" name="hs" min="0" max="100"  step="0.1" required>
+                </div>
+
+                <!-- Degree_P -->
+                <div class="form-group">
+                    <label for="b.tech">Enter the B.Tech CGPA:</label>
+                    <input type="number" class="form-control" id="b.tech" name="b.tech" min="0" max="10" step="0.1" required>
+                </div>
+
+                <!-- backlogs-->
+                <div class="form-group">
+                    <label for="backlogs">Enter No. Of Backlogs:</label>
+                    <input type="number" class="form-control" id="backlogs" name="backlogs" min="0" max="26" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>
