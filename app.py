@@ -29,9 +29,9 @@ def result():
 
         # predicting the probability
 
-        predictedprob = gb.predict_proba(inputfeatures)
+        #predictedprob = gb.predict_proba(inputfeatures)
 
-        print(predictedclass, predictedprob[0][0])
+        #print(predictedclass, predictedprob[0][0])
 
         if predictedclass[0] == 1:
             proba = predictedprob[0][1]
@@ -45,8 +45,7 @@ def result():
         predictedclasssend = placemap[predictedclass[0]]
 
         if predictedclass[0] == 1:
-            return render_template('show.html', predictedclasssend=predictedclasssend,
-                                   predictedprob=round(proba * 100, 2), placed=True)
+            return render_template('show.html', predictedclasssend=predictedclasssend, placed=True)
 
         else:
             return render_template('show.html', predictedclasssend=predictedclasssend)
